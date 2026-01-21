@@ -27,11 +27,13 @@ function moveToSlide(slideIndex) {
 }
 
 // Botones anterior y siguiente
-prevBtn.addEventListener('click', () => {
+prevBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     moveToSlide(currentSlide - 1);
 });
 
-nextBtn.addEventListener('click', () => {
+nextBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     moveToSlide(currentSlide + 1);
 });
 
@@ -59,13 +61,11 @@ carouselContainer.addEventListener('mouseleave', () => {
     }, 5000);
 });
 
-// Botones del carrusel "Agregar al carrito"
-const carouselAddButtons = document.querySelectorAll('.btn-carousel-add');
-carouselAddButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        const slide = this.closest('.carousel-slide');
-        const productName = slide.querySelector('h3').textContent;
-        addToCart(productName);
+// Prevenir navegación al hacer click en los slides (solo para demo)
+slides.forEach(slide => {
+    slide.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('Click en slide - En producción iría a la página del producto');
     });
 });
 
