@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Accesorios para Celulares</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>📱 TechStore</h1>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Inicio</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#" class="nav-link">Ofertas</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-icon">🔍</button>
+                <button class="btn-icon">👤</button>
+                <button class="btn-icon cart">
+                    🛒
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Los Mejores Accesorios para tu Celular</h2>
+                <p>Protección, estilo y tecnología al mejor precio</p>
+                <button class="btn-primary">Ver Productos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+        <div class="container">
+            <h3 class="section-title">Categorías Populares</h3>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🔌</div>
+                    <h4>Cargadores</h4>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h4>Fundas</h4>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎧</div>
+                    <h4>Auriculares</h4>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🛡️</div>
+                    <h4>Vidrios</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="products" id="productos">
+        <div class="container">
+            <h3 class="section-title">Productos Destacados</h3>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Nuevo</div>
+                    <div class="product-image">
+                        <div class="placeholder-image">🔌</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Cargador Rápido 20W</h4>
+                        <p class="product-description">Compatible con iPhone y Android</p>
+                        <div class="product-footer">
+                            <span class="price">$15.99</span>
+                            <button class="btn-add-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-badge sale">-30%</div>
+                    <div class="product-image">
+                        <div class="placeholder-image">📱</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Funda Silicona Premium</h4>
+                        <p class="product-description">Protección completa y suave tacto</p>
+                        <div class="product-footer">
+                            <span class="price">$9.99 <span class="old-price">$14.99</span></span>
+                            <button class="btn-add-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">🎧</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Auriculares Bluetooth</h4>
+                        <p class="product-description">Sonido HD con cancelación de ruido</p>
+                        <div class="product-footer">
+                            <span class="price">$45.99</span>
+                            <button class="btn-add-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">🛡️</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Vidrio Templado 9H</h4>
+                        <p class="product-description">Máxima protección para tu pantalla</p>
+                        <div class="product-footer">
+                            <span class="price">$7.99</span>
+                            <button class="btn-add-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <div class="product-badge">Hot</div>
+                    <div class="product-image">
+                        <div class="placeholder-image">🔋</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Power Bank 10000mAh</h4>
+                        <p class="product-description">Carga rápida portátil</p>
+                        <div class="product-footer">
+                            <span class="price">$29.99</span>
+                            <button class="btn-add-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">📲</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Soporte para Auto</h4>
+                        <p class="product-description">Magnético con rotación 360°</p>
+                        <div class="product-footer">
+                            <span class="price">$12.99</span>
+                            <button class="btn-add-cart">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechStore</h4>
+                    <p>Tu tienda de confianza para accesorios de celulares</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <a href="#">Sobre Nosotros</a>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@techstore.com</p>
+                    <p>📱 +54 11 1234-5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../public/js/main.js"></script>
+</body>
+</html>
